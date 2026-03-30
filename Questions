@@ -8,10 +8,10 @@
 =Uniquement du son :
     -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
         Images:
-        Lego Movie
-        Lego Batman
-        Lego Ninjago
-        Lego Star Wars
+        Lego Movie - Image: ./assets/image/Movie.webp
+        Lego Batman - Image: ./assets/image/Batman.webp
+        Lego Ninjago - Image: ./assets/image/Ninja go.webp
+        Lego Star Wars - Image: ./assets/image/StarWars.webp
 
     -  hope core (meme) - Son ./assets/son/hopecore.mp3
         Dreamcore
@@ -59,7 +59,7 @@
            - Mon diner
            - mon lit
 
-    -  Puceau moi ? Sérieusment ? - Image: ./assets/image/puceau.webp
+    -  Puceau moi ? Sérieusement ? - Image: ./assets/image/puceau.webp
         Q : __________ moi ?
         R: - Gourmand
             - Beau
