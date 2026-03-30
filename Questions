@@ -34,27 +34,28 @@
     }
 
     -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
-    Q:  Completé la suite de ce son
-    R:  c*nnard
-        *ncule
-        c*n
-        b*tard
+    {
+    type: "US",
+    question: "Completé la suite de ce son",
+    options: ["c*nnard", "*ncule", "c*n", "b*tard"],
+    answer: "c*nnard"
+    }
     
     -  Y que fue - Son ./assets/son/yquefue.mp3
-    Q:  Qui danse sur ce son ?
-    R:  Images:
-        ./assets/image/lamineyamal.webp
-        ./assets/image/joaoneves.webp
-        ./assets/image/demebele.webp
-        ./assets/image/mbappe.webp
+    {
+    type: "US",
+    question: "Qui danse sur ce son ?",
+    options: ["./assets/image/lamineyamal.webp", "./assets/image/joaoneves.webp", "./assets/image/demebele.webp", "./assets/image/mbappe.webp"],
+    answer: "./assets/image/lamineyamal.webp"
+    }
 
     -  Y que fue - Son ./assets/son/draaaa.mp3
-        Q:  Qui est responsable de ce son ?
-        R:  Images:
-            ./assets/image/cortex-proces.webp
-            ./assets/image/demebele.webp
-            ./assets/image/image-copy.webp
-            ./assets/image/swagg.webp
+    {
+    type: "US",
+    question: "Qui est responsable de ce son ?",
+    options: ["./assets/image/cortex-proces.webp", "./assets/image/demebele.webp", "./assets/image/image-copy.webp", "./assets/image/swagg.webp"],
+    answer: "./assets/image/cortex-proces.webp"
+    }
 
 =Image uniquement (IU) :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
@@ -66,11 +67,6 @@
     }
 
     -  This is fine - Image: ./assets/image/fine.webp
-    Q: Que dit le chien ?
-        "Everything is okay."
-        "It's all good."
-    R:  "This is fine."
-        "I'm fine."
     {
     type: "IU",
     question: "Que dit le chien ?",
@@ -116,12 +112,12 @@
     }
 
     - bombaridlo crocodilo - Image: ./assets/image/bombardilo.webp
-        {
-        type: "IU",
-        question: "Quel est le nom de l'animal ?",
-        options: ["Bombaridlo Crocodilo", "Tung Tung Sahour", "Capucino Assassino", "Jean-François le 1er"],
-        answer: "Bombaridlo Crocodilo"
-        }
+    {
+    type: "IU",
+    question: "Quel est le nom de l'animal ?",
+    options: ["Bombaridlo Crocodilo", "Tung Tung Sahour", "Capucino Assassino", "Jean-François le 1er"],
+    answer: "Bombaridlo Crocodilo"
+    }
 
 =Texte à trou (TT):
     -  Juste prix belge - Image: ./assets/image/98.webp
