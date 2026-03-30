@@ -138,6 +138,14 @@
     answer: "Bombaridlo Crocodilo"
     }
 
+    - metal pipe - Image: ./assets/image/metalpipe.webp
+    {
+    type: "IU",
+    question: "C'est quoi",
+    options: ["Metal stick", "Metal sword", "Metal pipe", "Metal guy"],
+    answer: "Metal pipe"
+    }
+
 =Texte à trou (TT):
     -  Juste prix belge - Image: ./assets/image/98.webp
     {
