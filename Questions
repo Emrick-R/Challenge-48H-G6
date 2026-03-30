@@ -15,15 +15,23 @@
     answer: "Yippee!"
     }
 
+    - Funky Town Fish - Gif: ./assets/image/funky.gif
+    {
+    type: "VSS",
+    question: "Sur quelle musique ce poisson tourne ?",
+    options: ["Never Gonna give you up", "99 Luftbaloon", "Funky Town", "Rien"],
+    answer: "Funky Town"
+    }
+
 
 =Son Uniquement (SU) :
     -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
-        {
-        type: "SU",
-        question: "La musique fait référence à quel film ?",
-        options: ["./assets/image/movie.webp", "./assets/image/batman.webp", "./assets/image/ninjago.webp", "./assets/image/starwars.webp"],
-        answer: "./assets/image/batman.webp"
-        }
+    {
+    type: "SU",
+    question: "La musique fait référence à quel film ?",
+    options: ["./assets/image/movie.webp", "./assets/image/batman.webp", "./assets/image/ninjago.webp", "./assets/image/starwars.webp"],
+    answer: "./assets/image/batman.webp"
+    }
 
     -  hope core (meme) - Son ./assets/son/hopecore.mp3
     {
@@ -58,12 +66,12 @@
     }
 
     -  9+10=21 - Son: ./assets/son/stupid.mp3
-        {
-        type: "SU",
-        question: "Ça fait combien 9+10 ?",
-        options: ["19", "18", "20", "21"],
-        answer: "21"
-        }
+    {
+    type: "SU",
+    question: "Ça fait combien 9+10 ?",
+    options: ["19", "18", "20", "21"],
+    answer: "21"
+    }
 
 =Image uniquement (IU) :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
