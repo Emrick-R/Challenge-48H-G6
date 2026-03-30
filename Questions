@@ -19,6 +19,19 @@
         Weirdcore
         Hopecore
 
+    -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
+        c*nnard
+        *ncule
+        c*n
+        b*tard
+    
+    -  Y que fue - Son ./assets/son/yquefue.mp3
+        Images:
+        lamineyamal
+        joaoneves
+        demebele
+        mbappe
+
 =Image uniquement :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
         R:  For sure
@@ -41,6 +54,11 @@
         "Together Forever"
         "Whenever You Need Somebody"
         "She Wants to Dance with Me"
+    -  Ouai ca doit etre ca ouai: ./assets/image/cadoitetrecaouai.webp
+        "Ouai ca doit etre ca ouai"
+        "Bien sur"
+        "Guette la lucarne"
+        "Allo, je suis gentil hein"
 
 =Texte à trou :
     -  Juste prix belge - Image: ./assets/image/98.webp
@@ -49,7 +67,6 @@
            - quatre-vingt-dix huit
            - quatre-vingt-huit
            - neuf huit
-
 
 
     -  Mon sac est fait - Image: ./assets/image/sac.gif
@@ -65,3 +82,17 @@
             - Beau
             - Puceau
             - Gentil
+
+    - Je veux les - Image: ./assets/jeveuxleschaussures.webp
+        Q : Je veux les __________ ?
+        R:  - Chaussons
+            - Chaussures
+            - souliers
+            - porter
+
+    -  Y'a les hendeks qui arrivent - Image: ./assets/image/yaleshendeks.webp
+        Q: Y'a les _________ qui arrivent
+        R: - hendeks
+           - gendarmes
+           - pompiers
+           - policiers
