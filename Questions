@@ -13,6 +13,13 @@
     R:  "Yippee!"
         "Oh non"
 
+    - bombaridlo crocodilo - Image: ./assets/image/bombardilo.webp
+    Q: Quel est le nom de l'animal ?
+    R:  Bombaridlo Crocodilo
+        Tung Tung Sahour
+        Capucino Assassino
+        Chat GPT
+
 =Uniquement du son :
     -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
     Q: La musique fait référence à quel film ?
@@ -32,10 +39,10 @@
 =Image uniquement :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
     Q: Que dit le président Macron ?
-        R:  For sure
-            Bien sûr
-            Of course
-            Certainement
+    R:  For sure
+        Bien sûr
+        Of course
+        Certainement
 
     -  This is fine - Image: ./assets/image/fine.webp
     Q: Que dit le chien ?
@@ -43,12 +50,14 @@
         "It's all good."
     R:  "This is fine."
         "I'm fine."
+
     -  Larry (chat) - Image: ./assets/image/larry.webp
     Q: Quel est le nom du chat ?
         Gary
     R:  Larry
         Barry
         Harry
+
     -  Rick roll - Image: ./assets/image/rickroll.webp
     Q: Quel est le nom de la musique ?
     R:  "never gonna give you up"
