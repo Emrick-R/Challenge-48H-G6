@@ -77,11 +77,19 @@
         "Together Forever"
         "Whenever You Need Somebody"
         "She Wants to Dance with Me"
+
     -  Ouai ca doit etre ca ouai: ./assets/image/cadoitetrecaouai.webp
         "Ouai ca doit etre ca ouai"
         "Bien sur"
         "Guette la lucarne"
         "Allo, je suis gentil hein"
+
+    - Backrooms - Image: ./assets/image/backrooms.webp
+    Q: Quel est le nom de la salle ?
+    R:  "Backrooms"
+        "Dining Room"
+        "Toilet"
+        "The Office"
 
 =Texte à trou :
     -  Juste prix belge - Image: ./assets/image/98.webp
