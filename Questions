@@ -141,9 +141,17 @@
     - metal pipe - Image: ./assets/image/metalpipe.webp
     {
     type: "IU",
-    question: "C'est quoi",
+    question: "C'est quoi ?",
     options: ["Metal stick", "Metal sword", "Metal pipe", "Metal guy"],
     answer: "Metal pipe"
+    }
+
+    - glorp - Image: ./assets/image/glorp.webp
+    {
+    type: "IU",
+    question: "Quel est son nom ?",
+    options: ["Glorp", "Glonk", "Gloup", "Glouglou"],
+    answer: "Glorp"
     }
 
 =Texte à trou (TT):
@@ -189,9 +197,9 @@
     }
 
     -  Under the water - Image: ./assets/image/under.gif
-        {
-        type: "TT",
-        question: "Hello. I'm __________ the water.",
-        options: ["drinking", "under", "swiming", "drowning"],
-        answer: "under"
-        }
+    {
+    type: "TT",
+    question: "Hello. I'm __________ the water.",
+    options: ["drinking", "under", "swiming", "drowning"],
+    answer: "under"
+    }
