@@ -154,6 +154,14 @@
     answer: "Glorp"
     }
 
+    - mewing - Image: ./assets/image/miew.webp
+    {
+    type: "IU",
+    question: "Il pratique quoi ?",
+    options: ["Le mewing", "Le miaouing", "Le woofing", "Le ouing"],
+    answer: "Le mewing"
+    }
+
 =Texte à trou (TT):
     -  Juste prix belge - Image: ./assets/image/98.webp
     {
