@@ -37,14 +37,14 @@
     R:  Hopecore
 
     -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
-        c*nnard
-        *ncule
+    Q:  c*nnard
+    R:  *ncule
         c*n
         b*tard
     
     -  Y que fue - Son ./assets/son/yquefue.mp3
-        Images:
-        lamineyamal
+    Q:  Images:
+    R:  lamineyamal
         joaoneves
         demebele
         mbappe
@@ -79,8 +79,8 @@
         "She Wants to Dance with Me"
 
     -  Ouai ca doit etre ca ouai: ./assets/image/cadoitetrecaouai.webp
-        "Ouai ca doit etre ca ouai"
-        "Bien sur"
+    Q:   "Ouai ca doit etre ca ouai"
+    R:  "Bien sur"
         "Guette la lucarne"
         "Allo, je suis gentil hein"
 
