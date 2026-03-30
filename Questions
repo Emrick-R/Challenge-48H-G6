@@ -1,23 +1,40 @@
 =Video sans son :
 	-I hate you (anakin) Vidéo : ./assets/video/anakin.mp4
+	Q: Que dit Anakin Skywalker dans le film Star Wars ?
         "You were my enemy!"
         "I despise you!"
-        "I hate you"
+    R:  "I hate you"
         "I will never forgive you!"
+
+    - yippee cat - Gif: ./assets/image/cat.gif
+    Q: Que dit le chat ?
+        "Miaou!"
+        "Yay!"
+    R:  "Yippee!"
+        "Oh non"
+
+    - bombaridlo crocodilo - Image: ./assets/image/bombardilo.webp
+    Q: Quel est le nom de l'animal ?
+    R:  Bombaridlo Crocodilo
+        Tung Tung Sahour
+        Capucino Assassino
+        Chat GPT
 
 =Uniquement du son :
     -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
+    Q: La musique fait référence à quel film ?
         Images:
-        Lego Movie
-        Lego Batman
-        Lego Ninjago
-        Lego Star Wars
+        Lego Movie - Image: ./assets/image/movie.webp
+    R:  Lego Batman - Image: ./assets/image/batman.webp
+        Lego Ninjago - Image: ./assets/image/ninjago.webp
+        Lego Star Wars - Image: ./assets/image/starwars.webp
 
     -  hope core (meme) - Son ./assets/son/hopecore.mp3
+    Q: Quel est le nom du meme lié à la musique ?
         Dreamcore
         Softcore
         Weirdcore
-        Hopecore
+    R:  Hopecore
 
     -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
         c*nnard
@@ -34,23 +51,29 @@
 
 =Image uniquement :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
-        R:  For sure
-            Bien sûr
-            Of course
-            Certainement
+    Q: Que dit le président Macron ?
+    R:  For sure
+        Bien sûr
+        Of course
+        Certainement
 
     -  This is fine - Image: ./assets/image/fine.webp
+    Q: Que dit le chien ?
         "Everything is okay."
         "It's all good."
-        "This is fine!=."
+    R:  "This is fine."
         "I'm fine."
+
     -  Larry (chat) - Image: ./assets/image/larry.webp
+    Q: Quel est le nom du chat ?
         Gary
-        Larry
+    R:  Larry
         Barry
         Harry
+
     -  Rick roll - Image: ./assets/image/rickroll.webp
-        "never gonna give you up"
+    Q: Quel est le nom de la musique ?
+    R:  "never gonna give you up"
         "Together Forever"
         "Whenever You Need Somebody"
         "She Wants to Dance with Me"
@@ -62,25 +85,25 @@
 
 =Texte à trou :
     -  Juste prix belge - Image: ./assets/image/98.webp
-        Q: _________, c'est le 9 et le 8 x
+        Q: _________, c'est le 9 et le 8 !
         R: - Nonante huit
            - quatre-vingt-dix huit
            - quatre-vingt-huit
            - neuf huit
 
 
-    -  Mon sac est fait - Image: ./assets/image/sac.gif
-        Q : __________ est fait !
-        R: - Mon gateau
-           - Mon sac
-           - Mon diner
-           - mon lit
+    -  Mon sac est fait - Gif: ./assets/image/sac.gif
+        Q : Mon _______ est fait ! Mon _______ est fait !
+           - gateau
+        R: - sac
+           - diner
+           - lit
 
-    -  Puceau moi ? Sérieusment ? - Image: ./assets/image/puceau.webp
-        Q : __________ moi ?
-        R: - Gourmand
+    -  Puceau moi ? Sérieusement ? - Image: ./assets/image/puceau.webp
+        Q : __________ moi ?  Sérieusement ? haha. On ne m'avait pas sortie celle là depuis loooongtemps.
+            - Gourmand
             - Beau
-            - Puceau
+        R:  - Puceau
             - Gentil
 
     - Je veux les - Image: ./assets/jeveuxleschaussures.webp
