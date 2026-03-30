@@ -73,6 +73,14 @@
     answer: "21"
     }
 
+    -  plankton - Son: ./assets/son/plankton.mp3
+        {
+        type: "SU",
+        question: "Qui fait ce bruit ?",
+        options: ["garry.webp", "patrick.webp", "spongebob.webp", "plankton.webp"],
+        answer: "plankton.webp"
+        }
+
 =Image uniquement (IU) :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
     {
