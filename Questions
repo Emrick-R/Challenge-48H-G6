@@ -34,21 +34,27 @@
     }
 
     -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
-    {
-    type: "US",
-    question: "Quel est le nom du meme lié à la musique ?",
-    options: ["c*nnard", "*ncule", "c*n", "b*tard"],
-    answer: "*ncule"
-    }
+    Q:  Completé la suite de ce son
+    R:  c*nnard
+        *ncule
+        c*n
+        b*tard
     
     -  Y que fue - Son ./assets/son/yquefue.mp3
-    Q:  Images:
-    {
-    type: "US",
-    question: "",
-    options: ["lamineyamal", "joaoneves", "demebele", "mbappe"],
-    answer: "lamineyamal"
-    }
+    Q:  Qui danse sur ce son ?
+    R:  Images:
+        ./assets/image/lamineyamal.webp
+        ./assets/image/joaoneves.webp
+        ./assets/image/demebele.webp
+        ./assets/image/mbappe.webp
+
+    -  Y que fue - Son ./assets/son/draaaa.mp3
+        Q:  Qui est responsable de ce son ?
+        R:  Images:
+            ./assets/image/cortex-proces.webp
+            ./assets/image/demebele.webp
+            ./assets/image/image-copy.webp
+            ./assets/image/swagg.webp
 
 =Image uniquement (IU) :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
