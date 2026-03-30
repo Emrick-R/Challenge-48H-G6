@@ -37,17 +37,27 @@
     R:  Hopecore
 
     -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
-    Q:  c*nnard
-    R:  *ncule
+    Q:  Completé la suite de ce son
+    R:  c*nnard
+        *ncule
         c*n
         b*tard
     
     -  Y que fue - Son ./assets/son/yquefue.mp3
-    Q:  Images:
-    R:  lamineyamal
-        joaoneves
-        demebele
-        mbappe
+    Q:  Qui danse sur ce son ?
+    R:  Images:
+        ./assets/image/lamineyamal.webp
+        ./assets/image/joaoneves.webp
+        ./assets/image/demebele.webp
+        ./assets/image/mbappe.webp
+
+    -  Y que fue - Son ./assets/son/draaaa.mp3
+        Q:  Qui est responsable de ce son ?
+        R:  Images:
+            ./assets/image/cortex-proces.webp
+            ./assets/image/demebele.webp
+            ./assets/image/image-copy.webp
+            ./assets/image/swagg.webp
 
 =Image uniquement :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
