@@ -187,3 +187,11 @@
     options: ["hendeks", "gendarmes", "pompiers", "policiers"],
     answer: "hendeks"
     }
+
+    -  Under the water - Image: ./assets/image/under.gif
+        {
+        type: "TT",
+        question: "Hello. I'm __________ the water.",
+        options: ["drinking", "under", "swiming", "drowning"],
+        answer: "under"
+        }
