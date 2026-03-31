@@ -20,6 +20,15 @@ function createRoomCodeCandidate(length = 6) {
   }).join('');
 }
 
+function shuffleInPlace(items) {
+  for (let index = items.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [items[index], items[swapIndex]] = [items[swapIndex], items[index]];
+  }
+
+  return items;
+}
+
 function toInteger(value) {
   if (value == null) {
     return null;
@@ -198,6 +207,8 @@ async function appendQuestionCycle(executor, roomId, themeId, startOrder) {
   if (!questions.length) {
     throw new Error('Aucune question jouable avec 4 reponses A/B/C/D n est disponible en base.');
   }
+
+  shuffleInPlace(questions);
 
   for (const [index, question] of questions.entries()) {
     await execute(

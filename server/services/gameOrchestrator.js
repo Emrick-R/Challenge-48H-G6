@@ -343,12 +343,6 @@ export class GameOrchestrator {
         continue;
       }
 
-      if (nextEliminationAt && nextEliminationAt <= now) {
-        await this.runElimination(room, context.players, now);
-        room = await this.requireRoom(room.roomCode);
-        continue;
-      }
-
       if (room.currentPhase === 'question_live' && phaseEndsAt && phaseEndsAt <= now) {
         await this.endCurrentQuestion(room, context, now);
         room = await this.requireRoom(room.roomCode);
@@ -357,6 +351,17 @@ export class GameOrchestrator {
 
       if (room.currentPhase === 'answer_reveal' && phaseEndsAt && phaseEndsAt <= now) {
         await this.afterReveal(room, context.players, now);
+        room = await this.requireRoom(room.roomCode);
+        continue;
+      }
+
+      if (
+        nextEliminationAt
+        && nextEliminationAt <= now
+        && room.currentPhase !== 'question_live'
+        && room.currentPhase !== 'answer_reveal'
+      ) {
+        await this.runElimination(room, context.players, now);
         room = await this.requireRoom(room.roomCode);
         continue;
       }
@@ -421,25 +426,41 @@ export class GameOrchestrator {
   }
 
   async afterReveal(room, players, now = Date.now()) {
-    const alivePlayers = players.filter((player) => player.status === 'alive');
+    let activeRoom = room;
+    let activePlayers = players;
+
+    const eliminationDue = toTimestamp(activeRoom.nextEliminationAt);
+
+    if (eliminationDue && eliminationDue <= now) {
+      await this.runElimination(activeRoom, activePlayers, now);
+      activeRoom = await this.requireRoom(activeRoom.roomCode);
+
+      if (activeRoom.status === 'finished') {
+        return;
+      }
+
+      activePlayers = await listPlayers(activeRoom.id);
+    }
+
+    const alivePlayers = activePlayers.filter((player) => player.status === 'alive');
 
     if (alivePlayers.length <= 1) {
-      await this.finishGame(room, players, now);
+      await this.finishGame(activeRoom, activePlayers, now);
       return;
     }
 
-    const next = await getNextRoomQuestion(room, room.currentQuestionOrder);
+    const next = await getNextRoomQuestion(activeRoom, activeRoom.currentQuestionOrder);
     const phaseStartedAt = toIsoString(now);
     const phaseEndsAt = toIsoString(now + (next.question.answerTimeSeconds * 1000));
 
     await launchQuestion({
-      roomId: room.id,
+      roomId: activeRoom.id,
       roomQuestionId: next.roomQuestionId,
       questionId: next.questionId,
       questionOrder: next.questionOrder,
       phaseStartedAt,
       phaseEndsAt,
-      nextEliminationAt: room.nextEliminationAt,
+      nextEliminationAt: activeRoom.nextEliminationAt,
     });
   }
 

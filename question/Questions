@@ -1,0 +1,229 @@
+=Video sans son (VSS) :
+	-I hate you (anakin) Vidéo : ./assets/video/anakin.mp4
+	{
+	type: "VSS",
+    question: "Que dit Anakin Skywalker dans le film Star Wars ?",
+    options: ["You were my enemy!", "I despise you!", "I hate you", "I will never forgive you!"],
+    answer: "I hate you"
+    }
+
+    - yippee cat - Gif: ./assets/image/cat.gif
+    {
+    type: "VSS",
+    question: "Que dit le chat ?",
+    options: ["Miaou!", "Yay!", "Yippee!", "Oh non"],
+    answer: "Yippee!"
+    }
+
+    - Funky Town Fish - Gif: ./assets/image/funky.gif
+    {
+    type: "VSS",
+    question: "Sur quelle musique ce poisson tourne ?",
+    options: ["Never Gonna give you up", "99 Luftbaloon", "Funky Town", "Rien"],
+    answer: "Funky Town"
+    }
+
+    - Virtual Insanity - Mp4: ./assets/video/virtual.mp4
+    {
+    type: "VSS",
+    question: "Quel est le nom de ce meme ?",
+    options: ["Real Insanity", "Virtual Insanity", "Grounded Insanity", "Insanity"],
+    answer: "Virtual Insanity"
+    }
+
+
+=Son Uniquement (SU) :
+    -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
+    {
+    type: "SU",
+    question: "La musique fait référence à quel film ?",
+    options: ["./assets/image/movie.webp", "./assets/image/batman.webp", "./assets/image/ninjago.webp", "./assets/image/starwars.webp"],
+    answer: "./assets/image/batman.webp"
+    }
+
+    -  hope core (meme) - Son ./assets/son/hopecore.mp3
+    {
+    type: "SU",
+    question: "Quel est le nom du meme lié à la musique ?",
+    options: ["Dreamcore", "Weirdcore", "Softcore", "Hopecore"],
+    answer: "Hopecore"
+    }
+
+    -  fais bisou espece de connard - Son ./assets/son/faisbisous.mp3
+    {
+    type: "SU",
+    question: "Completé la suite de ce son",
+    options: ["c*nnard", "*ncule", "c*n", "b*tard"],
+    answer: "c*nnard"
+    }
+    
+    -  Y que fue - Son ./assets/son/yquefue.mp3
+    {
+    type: "SU",
+    question: "Qui danse sur ce son ?",
+    options: ["./assets/image/lamineyamal.webp", "./assets/image/joaoneves.webp", "./assets/image/demebele.webp", "./assets/image/mbappe.webp"],
+    answer: "./assets/image/lamineyamal.webp"
+    }
+
+    -  Y que fue - Son ./assets/son/draaaa.mp3
+    {
+    type: "SU",
+    question: "Qui est responsable de ce son ?",
+    options: ["./assets/image/cortex-proces.webp", "./assets/image/demebele.webp", "./assets/image/image-copy.webp", "./assets/image/swagg.webp"],
+    answer: "./assets/image/cortex-proces.webp"
+    }
+
+    -  9+10=21 - Son: ./assets/son/stupid.mp3
+    {
+    type: "SU",
+    question: "Ça fait combien 9+10 ?",
+    options: ["19", "18", "20", "21"],
+    answer: "21"
+    }
+
+    -  plankton - Son: ./assets/son/plankton.mp3
+    {
+    type: "SU",
+    question: "Qui fait ce bruit ?",
+    options: ["garry.webp", "patrick.webp", "spongebob.webp", "plankton.webp"],
+    answer: "plankton.webp"
+    }
+
+=Image uniquement (IU) :
+    -  For sure (macron) -  Image: ./assets/image/for_sure.webp
+    {
+    type: "IU",
+    question: "Que dit le président Macron ?",
+    options: ["For sure", "Bien sûr", "Of course", "Certainement"],
+    answer: "For sure"
+    }
+
+    -  This is fine - Image: ./assets/image/fine.webp
+    {
+    type: "IU",
+    question: "Que dit le chien ?",
+    options: ["Everything is okay.", "It's all good.", "This is fine.", "I'm fine."],
+    answer: "This is fine."
+    }
+
+    -  Larry (chat) - Image: ./assets/image/larry.webp
+    {
+    type: "IU",
+    question: "Quel est le nom du chat ?",
+    options: ["Gary", "Larry", "Barry", "Harry"],
+    answer: "Larry"
+    }
+
+    -  Rick roll - Image: ./assets/image/rickroll.gif
+    {
+    type: "IU",
+    question: "Quel est le nom de la musique ?",
+    options: ["Never gonna give you up", "Together Forever", "Whenever You Need Somebody", "She Wants to Dance with Me"],
+    answer: "Never gonna give you up"
+    }
+
+    -  Ouais ca doit etre ca ouais: ./assets/image/cadoitetrecaouai.webp
+    {
+    type: "IU",
+    question: "",
+    options: ["Ouais ça doit etre ca ouais", "Bien sûr", "Guette la lucarne", "Allo, je suis gentil hein"],
+    answer: "Bien sur"
+    }
+
+    - Backrooms - Image: ./assets/image/backrooms.webp
+    {
+    type: "IU",
+    question: "Quel est le nom de la salle ?",
+    options: ["Backrooms", "Dining Room", "Toilet", "Offices"],
+    answer: "Backrooms"
+    }
+
+    - bombaridlo crocodilo - Image: ./assets/image/bombardilo.webp
+    {
+    type: "IU",
+    question: "Quel est le nom de l'animal ?",
+    options: ["Bombaridlo Crocodilo", "Tung Tung Sahour", "Capucino Assassino", "Jean-François le 1er"],
+    answer: "Bombaridlo Crocodilo"
+    }
+
+    - metal pipe - Image: ./assets/image/metalpipe.webp
+    {
+    type: "IU",
+    question: "C'est quoi ?",
+    options: ["Metal stick", "Metal sword", "Metal pipe", "Metal guy"],
+    answer: "Metal pipe"
+    }
+
+    - glorp - Image: ./assets/image/glorp.webp
+    {
+    type: "IU",
+    question: "Quel est son nom ?",
+    options: ["Glorp", "Glonk", "Gloup", "Glouglou"],
+    answer: "Glorp"
+    }
+
+    - mewing - Image: ./assets/image/miew.webp
+    {
+    type: "IU",
+    question: "Il pratique quoi ?",
+    options: ["Le mewing", "Le miaouing", "Le woofing", "Le ouing"],
+    answer: "Le mewing"
+    }
+
+     - cortisol - Image : ./assets/image/cortisol.webp
+     {
+     type: "IU",
+     question: "Trouvez la legende associé à cette image",
+     options: ["Serotonin level", "Dopamine level", "Cortisol level", "Testosterone level"],
+     answer: "Cortisol level"
+     }
+
+=Texte à trou (TT):
+    -  Juste prix belge - Image: ./assets/image/98.webp
+    {
+    type: "TT",
+    question: "_________, c'est le 9 et le 8 !",
+    options: ["Nonante huit", "quatre-vingt-dix huit", "quatre-vingt-huit", "neuf huit"],
+    answer: "Nonante huit"
+    }
+
+
+    -  Mon sac est fait - Gif: ./assets/image/sac.gif
+    {
+    type: "TT",
+    question: "Mon _______ est fait ! Mon _______ est fait !",
+    options: ["gateau", "sac", "diner", "lit"],
+    answer: "sac"
+    }
+
+    -  Puceau moi ? Sérieusement ? - Image: ./assets/image/puceau.webp
+    {
+    type: "TT",
+    question: "__________ moi ?  Sérieusement ? haha. On ne m'avait pas sortie celle là depuis loooongtemps.",
+    options: ["Gourmand", "Beau", "Puceau", "Gentil"],
+    answer: "Puceau"
+    }
+
+    - Je veux les - Image: ./assets/jeveuxleschaussures.webp
+    {
+    type: "TT",
+    question: "Je veux les __________ !",
+    options: ["chaussons", "chaussures", "souliers", "porter"],
+    answer: "chaussures"
+    }
+
+    -  Y'a les hendeks qui arrivent - Image: ./assets/image/yaleshendeks.webp
+    {
+    type: "TT",
+    question: "Y'a les _________ qui arrivent",
+    options: ["hendeks", "gendarmes", "pompiers", "policiers"],
+    answer: "hendeks"
+    }
+
+    -  Under the water - Image: ./assets/image/under.gif
+    {
+    type: "TT",
+    question: "Hello. I'm __________ the water.",
+    options: ["drinking", "under", "swiming", "drowning"],
+    answer: "under"
+    }

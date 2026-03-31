@@ -4,7 +4,7 @@ import { createRoom } from "../api/lobby";
 
 export default function WelcomePage() {
   const navigate = useNavigate();
-  const [hostName, setHostName] = useState("Host Qui a la réf ?");
+  const [hostName, setHostName] = useState("Host Qui a la ref ?");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -16,7 +16,7 @@ export default function WelcomePage() {
     try {
       const result = await createRoom({
         hostName,
-        themeId: 1,
+        themeId: 3,
         maxPlayers: 8,
       });
 
@@ -29,155 +29,117 @@ export default function WelcomePage() {
   }
 
   return (
-    <div className="bg-white text-slate-950">
-      <header className="absolute inset-x-0 top-0 z-30">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-          <div className="flex items-center gap-3">
-            <img alt="Qui a la réf ?" src="/img/minion.jpg" className="h-10 w-10 rounded-lg object-cover" />
-            <span className="bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-2xl font-black tracking-wider text-transparent">
-              Qui a la réf ?
-            </span>
-          </div>
-
-          <Link
-            to="/scan"
-            className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-indigo-200 hover:text-indigo-600"
-          >
-            Rejoindre une room
-          </Link>
-        </nav>
-      </header>
-
-      <main className="relative isolate overflow-hidden">
-        <svg
-          aria-hidden="true"
-          className="absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-slate-200"
-        >
-          <defs>
-            <pattern
-              x="50%"
-              y={-1}
-              id="enigma-grid"
-              width={200}
-              height={200}
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M.5 200V.5H200" fill="none" />
-            </pattern>
-          </defs>
-          <rect fill="url(#enigma-grid)" width="100%" height="100%" strokeWidth={0} />
-        </svg>
-
-        <div
-          aria-hidden="true"
-          className="absolute top-0 right-0 left-1/2 -z-10 -ml-24 overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
-        >
-          <div
-            style={{
-              clipPath:
-                "polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)",
-            }}
-            className="aspect-[801/1036] w-[50rem] bg-gradient-to-tr from-pink-300 to-indigo-300 opacity-40"
-          />
+    <div className="qa-ref-stage min-h-screen bg-[#030408] text-white">
+      <header className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-6 md:px-8">
+        <div>
+          <p className="qa-ref-kicker">Quiz Battle Royale</p>
+          <h1 className="qa-ref-title mt-2 text-5xl leading-none md:text-7xl">
+            Qui a la <span className="qa-ref-yellow-text">ref ?</span>
+          </h1>
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 pt-32 pb-20 lg:px-8 lg:pt-24">
-          <div className="mx-auto flex max-w-6xl flex-col gap-14 lg:flex-row lg:items-center">
-            <section className="w-full lg:max-w-xl xl:max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-indigo-500">
-                Quiz Battle Royale
-              </p>
-              <h1 className="mt-6 text-5xl font-black tracking-tight text-pretty sm:text-7xl">
-                Expert en meme ?
-              </h1>
-              <p className="mt-8 max-w-xl text-lg font-medium text-slate-500 sm:text-xl/8">
-                Creez une room sur PC, faites rejoindre jusqu a 8 joueurs sur telephone
-                et laissez le serveur piloter les questions, les scores et les
-                eliminations en direct.
-              </p>
+        <Link
+          to="/scan"
+          className="qa-ref-button qa-ref-button-primary px-5 py-3 text-sm uppercase"
+        >
+          Rejoindre une room
+        </Link>
+      </header>
 
-              <div className="mt-10 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Joueurs</p>
-                  <p className="mt-2 text-3xl font-black text-indigo-600">8 max</p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Reponses</p>
-                  <p className="mt-2 text-3xl font-black text-pink-500">A B C D</p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">Elimination</p>
-                  <p className="mt-2 text-3xl font-black text-amber-500">120s</p>
-                </div>
+      <main className="relative z-10 mx-auto flex min-h-[calc(100vh-96px)] w-full max-w-7xl flex-col gap-10 px-5 pb-10 md:px-8 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <section className="max-w-3xl">
+          <p className="qa-ref-kicker">Pop culture. Elimination. Tension.</p>
+          <h2 className="qa-ref-title qa-ref-neon-text mt-5 text-6xl leading-[0.9] md:text-8xl">
+            Battle quiz
+            <br />
+            en direct
+          </h2>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
+            Ouvrez une room sur le grand ecran, faites rejoindre jusqu a 8 joueurs
+            sur telephone, puis laissez la partie enchainer questions, corrections
+            et eliminations comme un vrai game show.
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="qa-ref-panel-soft qa-ref-card-glow-cyan rounded-[1.6rem] p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">Joueurs</p>
+              <p className="qa-ref-title mt-3 text-4xl text-cyan-300">8 max</p>
+            </div>
+            <div className="qa-ref-panel-soft qa-ref-card-glow-yellow rounded-[1.6rem] p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">Reponses</p>
+              <p className="qa-ref-title mt-3 text-4xl text-[#f4ea2a]">A B C D</p>
+            </div>
+            <div className="qa-ref-panel-soft qa-ref-card-glow-magenta rounded-[1.6rem] p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">Elimination</p>
+              <p className="qa-ref-title mt-3 text-4xl text-rose-400">120s</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="qa-ref-panel relative overflow-hidden rounded-[2.2rem] p-6 md:p-8">
+          <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-300 via-rose-500 to-[#f4ea2a]" />
+          <div className="grid gap-8">
+            <div>
+              <p className="qa-ref-kicker">Poste principal</p>
+              <h3 className="qa-ref-title mt-3 text-5xl leading-none">Creer une salle</h3>
+              <p className="mt-4 text-base leading-7 text-slate-300">
+                Le grand ecran affiche la question, le timer, la correction et
+                le leaderboard pendant que les joueurs repondent sur mobile.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="qa-ref-panel-soft rounded-[1.4rem] p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-400">Lobby</p>
+                <p className="mt-3 text-sm font-bold text-white">QR code + code room visibles</p>
               </div>
+              <div className="qa-ref-panel-soft rounded-[1.4rem] p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-400">Live</p>
+                <p className="mt-3 text-sm font-bold text-white">Question, media, timer, scores</p>
+              </div>
+              <div className="qa-ref-panel-soft rounded-[1.4rem] p-4">
+                <p className="text-xs uppercase tracking-[0.24em] text-slate-400">Final</p>
+                <p className="mt-3 text-sm font-bold text-white">Podium + classement final</p>
+              </div>
+            </div>
 
-              <div className="mt-10 flex flex-wrap items-center gap-4">
+            <form onSubmit={handleCreateRoom} className="grid gap-4">
+              <label className="block">
+                <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">
+                  Nom de l host
+                </span>
+                <input
+                  type="text"
+                  value={hostName}
+                  onChange={(event) => setHostName(event.target.value)}
+                  className="w-full rounded-[1.4rem] border border-white/10 bg-white/6 px-4 py-4 text-lg font-semibold text-white outline-none transition focus:border-cyan-300/50 focus:bg-white/8"
+                />
+              </label>
+
+              {error && (
+                <div className="rounded-2xl border border-rose-400/30 bg-rose-500/12 px-4 py-3 text-sm font-medium text-rose-100">
+                  {error}
+                </div>
+              )}
+
+              <div className="flex flex-wrap gap-3 pt-2">
                 <button
                   type="submit"
-                  form="create-room-form"
                   disabled={loading}
-                  className="rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="qa-ref-button qa-ref-button-primary px-6 py-4 text-sm uppercase disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {loading ? "Creation..." : "Creer la room"}
                 </button>
                 <Link
                   to="/scan"
-                  className="rounded-md border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-indigo-200 hover:text-indigo-600"
+                  className="qa-ref-button border border-white/12 bg-white/6 px-6 py-4 text-sm uppercase text-white"
                 >
                   Rejoindre avec un code
                 </Link>
               </div>
-            </section>
-
-            <section className="flex w-full flex-col gap-8 lg:max-w-2xl">
-              <div className="flex justify-end gap-8 sm:-mt-10 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                <div className="ml-auto w-40 flex-none space-y-8 pt-28 sm:ml-0 sm:pt-72 lg:order-last lg:pt-28 xl:order-none xl:pt-72">
-                  <img alt="" src="/img/think-about-it.jpg" className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg ring-1 ring-slate-900/10" />
-                </div>
-                <div className="mr-auto w-40 flex-none space-y-8 sm:mr-0 sm:pt-48 lg:pt-24">
-                  <img alt="" src="/img/idk.jpg" className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg ring-1 ring-slate-900/10" />
-                  <img alt="" src="/img/shrek.jpg" className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg ring-1 ring-slate-900/10" />
-                </div>
-                <div className="w-40 flex-none space-y-8 pt-28 sm:pt-0">
-                  <img alt="" src="/img/cry.jpg" className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg ring-1 ring-slate-900/10" />
-                  <img alt="" src="/img/cat.jpg" className="aspect-[2/3] w-full rounded-xl object-cover shadow-lg ring-1 ring-slate-900/10" />
-                </div>
-              </div>
-
-              <form
-                id="create-room-form"
-                onSubmit={handleCreateRoom}
-                className="rounded-[2rem] border border-slate-200 bg-white/90 p-6 shadow-xl shadow-slate-200/60"
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-500">
-                  Poste principal
-                </p>
-                <h2 className="mt-2 text-3xl font-black">Demarrer une nouvelle salle</h2>
-                <p className="mt-3 text-slate-500">
-                  Le PC affiche la question, le timer, la bonne reponse et le classement en simultane.
-                </p>
-
-                <label className="mt-6 block">
-                  <span className="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
-                    Nom de l host
-                  </span>
-                  <input
-                    type="text"
-                    value={hostName}
-                    onChange={(event) => setHostName(event.target.value)}
-                    className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-slate-950 outline-none transition focus:border-indigo-300 focus:bg-white"
-                  />
-                </label>
-
-                {error && (
-                  <div className="mt-4 rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700">
-                    {error}
-                  </div>
-                )}
-              </form>
-            </section>
+            </form>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );

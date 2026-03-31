@@ -77,7 +77,8 @@ export function getRoomState(roomCode, viewer = {}) {
 }
 
 export function buildJoinUrl(roomCode) {
-  const baseUrl = window.location.origin;
+  const publicUrl = import.meta.env.VITE_PUBLIC_APP_URL?.trim();
+  const baseUrl = publicUrl || window.location.origin;
   return `${baseUrl}/scan?room=${encodeURIComponent(roomCode)}`;
 }
 

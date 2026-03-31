@@ -44,36 +44,37 @@ export default function ScanQr() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 px-4 py-6 text-slate-950 md:p-8">
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col gap-8">
+    <div className="qa-ref-stage min-h-screen bg-[#030408] px-4 py-6 text-white md:p-8">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col gap-8">
         <header className="flex items-center justify-between">
-          <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-indigo-600">
+          <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 transition hover:text-cyan-300">
             <ArrowLeftIcon className="h-5 w-5" />
             Retour
           </Link>
-          <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-500 shadow-sm ring-1 ring-slate-200">
-            <ComputerDesktopIcon className="h-5 w-5 text-indigo-500" />
+          <div className="qa-ref-chip inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-slate-200">
+            <ComputerDesktopIcon className="h-5 w-5 text-cyan-300" />
             Ecran joueur
           </div>
         </header>
 
         <div className="grid flex-1 items-center gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/70">
-            <div className="mb-6 inline-flex rounded-full bg-indigo-100 p-4 shadow-inner">
-              <QrCodeIcon className="h-8 w-8 text-indigo-600" />
+          <section className="qa-ref-panel rounded-[2rem] p-6 md:p-8">
+            <div className="qa-ref-card-glow-cyan mb-6 inline-flex rounded-full bg-cyan-400/10 p-4 shadow-inner">
+              <QrCodeIcon className="h-8 w-8 text-cyan-300" />
             </div>
 
-            <h1 className="text-4xl font-black text-slate-950 md:text-5xl">
-              Rejoins la partie Qui a la réf ?
+            <p className="qa-ref-kicker">Mobile player</p>
+            <h1 className="qa-ref-title mt-3 text-5xl leading-none md:text-6xl">
+              Rejoins la partie
             </h1>
-            <p className="mt-3 text-lg text-slate-500">
-              Saisis le code de salle et ton pseudo. Si tu es deja sur le bon lien,
-              le code est pre-rempli automatiquement.
+            <p className="mt-4 text-lg leading-8 text-slate-300">
+              Entre le code de salle, choisis ton pseudo, puis prepare-toi a
+              repondre le plus vite possible pour survivre.
             </p>
 
             <form onSubmit={handleJoin} className="mt-8 space-y-4">
               <label className="block">
-                <span className="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
+                <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">
                   Code de salle
                 </span>
                 <input
@@ -81,12 +82,12 @@ export default function ScanQr() {
                   value={roomCode}
                   onChange={(event) => setRoomCode(event.target.value.toUpperCase())}
                   placeholder="ABC123"
-                  className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-2xl font-black tracking-[0.3em] outline-none transition focus:border-indigo-300 focus:bg-white"
+                  className="qa-ref-title w-full rounded-[1.4rem] border border-white/10 bg-white/6 px-4 py-4 text-3xl tracking-[0.22em] text-white outline-none transition focus:border-cyan-300/50 focus:bg-white/8"
                 />
               </label>
 
               <label className="block">
-                <span className="mb-2 block text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
+                <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">
                   Pseudo
                 </span>
                 <input
@@ -94,12 +95,12 @@ export default function ScanQr() {
                   value={nickname}
                   onChange={(event) => setNickname(event.target.value)}
                   placeholder="Votre pseudo"
-                  className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-lg outline-none transition focus:border-indigo-300 focus:bg-white"
+                  className="w-full rounded-[1.4rem] border border-white/10 bg-white/6 px-4 py-4 text-lg text-white outline-none transition focus:border-cyan-300/50 focus:bg-white/8"
                 />
               </label>
 
               {error && (
-                <div className="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700">
+                <div className="rounded-2xl border border-rose-400/30 bg-rose-500/12 px-4 py-3 text-sm font-medium text-rose-100">
                   {error}
                 </div>
               )}
@@ -107,7 +108,7 @@ export default function ScanQr() {
               <button
                 type="submit"
                 disabled={loading || !roomCode || !nickname}
-                className="flex w-full items-center justify-center gap-3 rounded-full bg-indigo-600 px-5 py-4 text-lg font-black text-white shadow-lg shadow-indigo-100 transition hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-60"
+                className="qa-ref-button qa-ref-button-primary flex w-full items-center justify-center gap-3 px-5 py-4 text-lg uppercase disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <QrCodeIcon className="h-6 w-6" />
                 {loading ? "Connexion..." : "Rejoindre la room"}
@@ -116,37 +117,28 @@ export default function ScanQr() {
           </section>
 
           <section className="flex items-center justify-center">
-            <div className="relative group">
-              <div className="absolute -top-4 -left-4 h-12 w-12 rounded-tl-lg border-t-4 border-l-4 border-indigo-500" />
-              <div className="absolute -top-4 -right-4 h-12 w-12 rounded-tr-lg border-t-4 border-r-4 border-indigo-500" />
-              <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-bl-lg border-b-4 border-l-4 border-indigo-500" />
-              <div className="absolute -bottom-4 -right-4 h-12 w-12 rounded-br-lg border-r-4 border-b-4 border-indigo-500" />
+            <div className="qa-ref-panel qa-ref-card-glow-magenta relative w-full max-w-md rounded-[2.2rem] p-6 text-center">
+              <div className="absolute -top-4 -left-4 h-12 w-12 rounded-tl-2xl border-t-4 border-l-4 border-cyan-300" />
+              <div className="absolute -top-4 -right-4 h-12 w-12 rounded-tr-2xl border-t-4 border-r-4 border-cyan-300" />
+              <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-bl-2xl border-b-4 border-l-4 border-cyan-300" />
+              <div className="absolute -bottom-4 -right-4 h-12 w-12 rounded-br-2xl border-r-4 border-b-4 border-cyan-300" />
 
-              <div className="relative rounded-[2rem] border border-slate-200 bg-white p-6 text-center shadow-2xl">
+              <div className="relative rounded-[1.7rem] bg-white p-6 text-slate-950 shadow-2xl">
                 <QRCodeSVG value={qrValue} size={260} className="mx-auto" />
-                <div className="absolute top-0 left-0 h-1 w-full animate-[scan-line_2s_linear_infinite] bg-indigo-500 shadow-lg" />
-                <p className="mt-6 text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">
-                  QR de la room
-                </p>
-                <p className="mt-2 text-3xl font-black tracking-[0.25em] text-indigo-600">
-                  {roomCode || "ROOM"}
-                </p>
-                <p className="mt-4 text-sm text-slate-500">
-                  Le PC affiche ce meme lien pour rejoindre la salle.
-                </p>
+                <div className="qa-ref-scan-line absolute top-0 left-0 h-1 w-full bg-cyan-400 shadow-lg shadow-cyan-300/50" />
               </div>
+
+              <p className="qa-ref-kicker mt-6">QR de la room</p>
+              <p className="qa-ref-title mt-2 text-5xl text-[#f4ea2a]">
+                {roomCode || "ROOM"}
+              </p>
+              <p className="mt-4 text-sm leading-6 text-slate-300">
+                Si vous voyez le grand ecran, vous pouvez aussi simplement saisir
+                le code sans scanner.
+              </p>
             </div>
           </section>
         </div>
-
-        <style>{`
-          @keyframes scan-line {
-            0% { top: 0%; opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { top: 100%; opacity: 0; }
-          }
-        `}</style>
       </div>
     </div>
   );
