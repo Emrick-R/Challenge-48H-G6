@@ -106,7 +106,7 @@
     answer: "Larry"
     }
 
-    -  Rick roll - Image: ./assets/image/rickroll.webp
+    -  Rick roll - Image: ./assets/image/rickroll.gif
     {
     type: "IU",
     question: "Quel est le nom de la musique ?",
