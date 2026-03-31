@@ -31,6 +31,15 @@
     answer: "Virtual Insanity"
     }
 
+     - Mama i chocolad - Mp4: ./assets/video/chocolat.mp4
+    {
+    type: "VSS",
+    question: "Мама съела __________, а я что делать?!",
+    options: ["мороженое", "шоколадку", "конфету", "яблоко"],
+    answer: "шоколадку",
+    path: "./assets/video/chocolat.mp4"
+}
+
 
 =Son Uniquement (SU) :
     -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
