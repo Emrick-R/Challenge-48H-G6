@@ -23,7 +23,7 @@
     answer: "Funky Town"
     }
 
-    - Virtual Inssanity - Mp4: ./assets/video/virtual.mp4
+    - Virtual Insanity - Mp4: ./assets/video/virtual.mp4
     {
     type: "VSS",
     question: "Quel est le nom de ce meme ?",
