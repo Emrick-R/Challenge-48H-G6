@@ -170,6 +170,14 @@
     answer: "Le mewing"
     }
 
+     - cortisol - Image : ./assets/image/cortisol.webp
+     {
+     type: "IU",
+     question: "Trouvez la legende associé à cette image",
+     options: ["Serotonin level", "Dopamine level", "Cortisol level", "Testosterone level"],
+     answer: "Cortisol level"
+     }
+
 =Texte à trou (TT):
     -  Juste prix belge - Image: ./assets/image/98.webp
     {
