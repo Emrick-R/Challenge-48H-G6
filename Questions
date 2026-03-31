@@ -74,12 +74,12 @@
     }
 
     -  plankton - Son: ./assets/son/plankton.mp3
-        {
-        type: "SU",
-        question: "Qui fait ce bruit ?",
-        options: ["garry.webp", "patrick.webp", "spongebob.webp", "plankton.webp"],
-        answer: "plankton.webp"
-        }
+    {
+    type: "SU",
+    question: "Qui fait ce bruit ?",
+    options: ["garry.webp", "patrick.webp", "spongebob.webp", "plankton.webp"],
+    answer: "plankton.webp"
+    }
 
 =Image uniquement (IU) :
     -  For sure (macron) -  Image: ./assets/image/for_sure.webp
@@ -114,11 +114,11 @@
     answer: "Never gonna give you up"
     }
 
-    -  Ouai ca doit etre ca ouai: ./assets/image/cadoitetrecaouai.webp
+    -  Ouais ca doit etre ca ouais: ./assets/image/cadoitetrecaouai.webp
     {
     type: "IU",
     question: "",
-    options: ["Ouai ça doit etre ca ouai", "Bien sûr", "Guette la lucarne", "Allo, je suis gentil hein"],
+    options: ["Ouais ça doit etre ca ouais", "Bien sûr", "Guette la lucarne", "Allo, je suis gentil hein"],
     answer: "Bien sur"
     }
 
