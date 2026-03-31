@@ -23,6 +23,14 @@
     answer: "Funky Town"
     }
 
+    - Virtual Inssanity - Mp4: ./assets/video/virtual.mp4
+    {
+    type: "VSS",
+    question: "Quel est le nom de ce meme ?",
+    options: ["Real Insanity", "Virtual Insanity", "Grounded Insanity", "Insanity"],
+    answer: "Virtual Insanity"
+    }
+
 
 =Son Uniquement (SU) :
     -  Die in your arm tonight (lego Batman)-  Son : ./assets/son/died.mp3
